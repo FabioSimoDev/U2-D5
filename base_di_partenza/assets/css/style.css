@@ -1,0 +1,315 @@
+@import url("https://fonts.[g]oogleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Spectral:wght@400;500;600;700;800&display=swap");
+
+nav {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
+}
+
+header {
+  background-color: rgb(255, 192, 23);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.btn {
+  background: rgb(26, 26, 26);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 99em;
+  border: 1px solid rgb(25, 25, 25);
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+header button.btn.scrolled {
+  background: #1a8917;
+  border-color: #1a8917;
+}
+
+nav button:hover {
+  cursor: pointer;
+  border-color: rgb(36, 36, 36);
+  background-color: black;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main section.hero-section {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 192, 23);
+  border-bottom: 1px solid black;
+}
+
+section.hero-section .right {
+  position: absolute;
+  right: 0;
+  display: block;
+}
+
+section.hero-section .left-container {
+  display: flex;
+  width: 100%;
+  max-width: 1248px;
+  align-items: center;
+  height: max-content;
+  margin: 0px 64px;
+}
+
+section.hero-section .left {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 93px 0;
+}
+
+section.hero-section .left h2 {
+  line-height: 95px;
+  margin-bottom: 35px;
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-size: 106px;
+  white-space: nowrap;
+  letter-spacing: -0.05em;
+}
+
+section.hero-section .left .left-text {
+  line-height: 24px;
+  font-size: 24px;
+  margin-bottom: 50px;
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+}
+
+section.hero-section .left button {
+  line-height: 24px;
+  width: 213px;
+  font-size: 20px;
+}
+
+.main-content {
+  padding-top: 40px;
+}
+
+article {
+  font-family: "Roboto", sans-serif;
+}
+
+.trending-container {
+  width: 66%;
+  margin: auto;
+  padding-bottom: 32px;
+  border-bottom: 1px solid color-mix(in srgb, black 10%, white 90%);
+}
+
+.trending-articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+}
+
+.trending-articles article {
+  display: flex;
+  align-items: flex-start;
+  width: fit-content;
+  margin-bottom: 24px;
+}
+
+.profile-picture {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.article-header {
+  display: flex;
+  align-items: center;
+  text-indent: 5px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.article-count {
+  margin-right: 16px;
+  font-size: 32px;
+  color: color-mix(in srgb, black 5%, white 95%);
+  font-weight: 800;
+  position: relative;
+  top: -10px;
+  line-height: 38px;
+}
+
+.article-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  line-height: 1.4rem;
+}
+
+.article-author-name h4 span {
+  color: rgb(77, 77, 77);
+}
+
+.trending-title {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.article-author-profile-picture img {
+  margin-right: 8px;
+}
+
+.article-date {
+  font-size: 13px;
+  color: rgb(107, 107, 107);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 20px;
+}
+
+.article-date img {
+  width: 16px;
+  height: 16px;
+  padding-left: 4px;
+}
+
+/* articles principali */
+
+.latest-articles {
+  padding-top: 56px;
+  width: 66%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2.2fr 1.3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 80px;
+  padding-bottom: 50px;
+}
+
+.latest-articles article {
+  display: flex;
+  margin-bottom: 48px;
+  justify-content: space-between;
+}
+
+.article-texts-area {
+  margin-right: 20px;
+  flex-basis: 100%;
+}
+
+.latest-articles article .article-img-area img {
+  width: 200px;
+}
+
+.latest-articles article .article-date .save-svg img {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+
+.tag {
+  padding: 8px 15px;
+  background-color: rgb(242, 242, 242);
+  color: rgb(107, 107, 107);
+  border-radius: 99em;
+}
+
+.date-read-time .tag {
+  margin-left: 5px;
+}
+
+.latest-articles .article-title h4 {
+  font-size: 20px;
+  color: rgb(36, 36, 36);
+}
+
+.article-summary {
+  color: rgb(107, 107, 107);
+  line-height: 20px;
+}
+
+.latest-articles .article-date {
+  padding-top: 8px;
+  align-items: center;
+}
+
+.date-read-time span {
+  display: flex;
+  align-items: center;
+}
+
+/* topics tag */
+.topics-tag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-bottom: 32px;
+  border-bottom: 1px solid color-mix(in srgb, black 10%, white 90%);
+}
+
+.search-articles h2 {
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.search-articles {
+  font-family: "Roboto", sans-serif;
+  height: fit-content;
+}
+
+.topics-tag a {
+  margin-bottom: 10px;
+  color: rgb(36, 36, 36);
+  padding: 13px 18px;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.more-topics-a {
+  margin-top: 14px;
+}
+
+.more-topics-a a {
+  font-size: 14px;
+  color: rgb(26, 137, 23);
+  text-indent: 5px;
+}
+
+/* info - "footer" */
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 0;
+}
+
+.info-link {
+  margin-right: 26px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: rgb(107, 107, 107);
+  line-height: 20px;
+}
+
+g[aria-label] * {
+  transition: opacity 0.5s ease;
+}
